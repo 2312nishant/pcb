@@ -1,0 +1,7 @@
+{
+  "name": "Mera Job (www.pcbtoday.in)",
+  "short_name": "PCB Today",
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "892500270079"
+}

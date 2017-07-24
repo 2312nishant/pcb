@@ -1,0 +1,3 @@
+Sitemap: http://www.pcbtoday.in/sitemap.xml
+
+User-agent: *

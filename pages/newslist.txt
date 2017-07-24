@@ -1,0 +1,103 @@
+    <div class="col-sm-12 col-md-12">
+	
+<!-- News Sliders Start -->
+<div class="newsSliderDiv clearfix">
+	<div class="nsSliderLeft">
+		<div id="BigNewsSlider" class="owl-carousel"><!-- Big News Slider Start -->
+			<div class="item">
+				<img src="img/big-news1.jpg">
+				<div class="bnsOverlay">
+					<div class="bnsCaption ">
+						<div class="bnsCaptop clearfix">
+							<div class="bnsCatg">चालू घडामोडी</div>
+							<div class="bnsDate">05 June 2017</div>
+						</div>
+                        <div class="caption">ओला व सुका कचरा वेगवेगळा गोळा करण्याचा पिंपरी महापालिकेचा उपक्रम; पिंपळेसौदागरमध्ये शुभारंभ</div>
+                    </div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/big-news2.jpg">
+				<div class="bnsOverlay">
+					<div class="bnsCaption">
+						<div class="bnsCaptop clearfix">
+							<div class="bnsCatg">चालू घडामोडी</div>
+							<div class="bnsDate">05 June 2017</div>
+						</div>
+                        <div class="caption">पिंपरी-चिंचवडमध्ये २० ठिकाणी हवा प्रदूषण नियंत्रण यंत्रणा; आमदार जगतापांच्या हस्ते उद्घाटन</div>
+                    </div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/big-news3.jpg">
+				<div class="bnsOverlay">
+					<div class="bnsCaption">
+						<div class="bnsCaptop clearfix">
+							<div class="bnsCatg">चालू घडामोडी</div>
+							<div class="bnsDate">05 June 2017</div>
+						</div>
+                        <div class="caption">पावसाळ्याच्या तोंडावर पिंपरी-चिंचवडमधील रस्त्यांना डांबरीकरणाचा मुलामा</div>
+                    </div>
+				</div>
+			</div>
+		</div><!-- Big News Slider End -->
+	</div>
+	
+	<div class="latestNewsThumbs"><!-- Latest News Slider Start -->
+		<ul class="list-unstyled clean">
+			<li>
+				<a href="#" class="lnThumb">
+					<img src="img/ln-img1.jpg">
+					<div class="lntCaptionDiv">
+						<div class="lndDate">05 June 2017</div>
+						<div class="lntCaption">नॅसॉन-न्यूट्रॉन-तारकांसाठी प्रथमच मिशन सुरू करण्यासाठी नासा सेट</div>
+					</div>
+				</a>	
+			</li>
+			<li>
+				<a href="#" class="lnThumb">
+					<img src="img/ln-img2.jpg">
+					<div class="lntCaptionDiv">
+						<div class="lndDate">05 June 2017</div>
+						<div class="lntCaption">नॅसॉन-न्यूट्रॉन-तारकांसाठी प्रथमच मिशन सुरू करण्यासाठी नासा सेट</div>
+					</div>
+				</a>	
+			</li>
+			<li>
+				<a href="#" class="lnThumb">
+					<img src="img/ln-img3.jpg">
+					<div class="lntCaptionDiv">
+						<div class="lndDate">05 June 2017</div>
+						<div class="lntCaption">नॅसॉन-न्यूट्रॉन-तारकांसाठी प्रथमच मिशन सुरू करण्यासाठी नासा सेट</div>
+					</div>
+				</a>	
+			</li>
+			<li>
+				<a href="#" class="lnThumb">
+					<img src="img/ln-img4.jpg">
+					<div class="lntCaptionDiv">
+						<div class="lndDate">05 June 2017</div>
+						<div class="lntCaption">नॅसॉन-न्यूट्रॉन-तारकांसाठी प्रथमच मिशन सुरू करण्यासाठी नासा सेट</div>
+					</div>
+				</a>	
+			</li>
+		</ul>		
+	</div><!-- Latest News Slider End -->
+</div>
+<!-- News Sliders End -->
+
+    </div>
+	<div style="clear:both"></div>
+	<div class="col-sm-12 col-md-12">
+	<div ui-view="mainContent"></div>
+        
+    </div>
+    <div style="clear:both"></div>
+    
+    <div>
+	<div ui-view="columnOne" class="col-xs-12 col-sm-12 col-md-8"></div>
+        <div ui-view="columnTwo" class="col-xs-12 col-sm-12 col-md-4"></div>
+		<div style="clear:both"></div>
+    </div>
+
+    

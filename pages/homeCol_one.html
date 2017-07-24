@@ -1,0 +1,17 @@
+<div class="newsThumbRow" ng-repeat="newslist in topNews.data" ng-if="$index !=0 && $index!=11 && $index!=12"><!-- News Thumb Row Start -->
+					<h1 class="heading"><a ui-sref="web.newslist({id:newslist[0].newsType_id})"><span>{{newslist[0].display_name}}</span></a></h1>
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-4" ng-repeat="news in newslist">
+							<div class="newsThumb">
+								<div class="newsImg"><img ng-src="{{'uploads/'+news.newsType_id+'/'+news.image}}"><a href="NewsDetail/{{news.collection_id}}" class="btn whtBtn">Read more</a></div>
+								<div class="newsInfo">
+									<div class="niTop clearfix">
+										<div class="newsDate pull-left">{{news.created_date}}</div>
+									</div>
+									<div class="newsTitle">{{news.title}}</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div><!-- News Thumb Row End -->

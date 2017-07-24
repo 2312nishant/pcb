@@ -1,0 +1,33 @@
+<div class="col-md-8">               	
+         				<div class="outertight">
+                        	<ul class="block">
+                                <li ng-repeat="item in news | startFrom:currentPage*pageSize | limitTo:pageSize" class="block3">
+                              <a href="?{{item.id}}" style="display:block">
+                              		<img src="{{item.imageUrl}}" alt="MyPassion" class="col-md-4" style="padding:0" /></a>
+                                    
+                                    <p class="col-md-8">
+                                        <span>26 May, 2013.</span>
+                                        <a href="#/readNews">{{item.title}}</a>                                        
+                                       <a href="#/readNews" style="color:#0093C9 !important; display:block">आणखी वाचा</a>
+                                    </p>
+
+                                </li>
+                                <div style="clear:both"></div>
+                              </ul>
+                               <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Previous
+    </button>
+    {{currentPage+1}}/{{numberOfPages()}}
+    <button ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Next
+    </button>
+                         </div>
+                                      
+     </div>
+     <!-- Left Sidebar -->
+<div class="col-md-4" ng-include="'pages/rightBar.html'" style="position:relative">
+
+
+</div>      
+			
+    

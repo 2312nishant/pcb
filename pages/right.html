@@ -1,0 +1,118 @@
+
+				<div class="mostReadNewsDiv offsetBot40"><!-- Most Read News Start -->
+					<h1 class="heading"><span>सर्वाधिक वाचलेल्या बातम्या</span></h1>
+					<div class="mrnList">
+						<ul class="list-unstyled clean">
+							<li class="clearfix" ng-repeat="news in topReadNews">
+								<div class="mrnInfo">
+									<a href="NewsDetail/{{news.collection_id}}" class="mrnTitle">{{news.title}}</a>
+									<div class="mrnDate">{{news.created_date}}</div>
+								</div>
+								<div class="mrnImg"><a href="#"><img ng-src="{{'uploads/'+news.newsType_id+'/'+news.image}}"></a></div>
+							</li>
+							
+						</ul>
+					</div>
+				</div><!-- Most Read News End -->
+				
+				<div class="advtBox offsetBot40"><!-- Advertisement Box Start -->
+					<h1 class="heading"><span>जाहिराती</span></h1>
+					<div id="advtSlider" class="owl-carousel owl-theme">
+								<div class="item" ng-repeat="images in rightAds"><img ng-src="{{'uploads/'+images.adv_type+'/'+images.image}}"></div>
+								
+							</div>
+				</div><!-- Advertisement Box End -->
+				
+				<div class="socialSites offsetBot40"><!-- Social Connection Start -->
+					<h1 class="heading"><span>रहा कनेक्टेड</span></h1>
+					<div class="siDiv ">
+						<ul class="list-unstyled clean clearfix">
+							<li class="socialIcon text-center">
+								<a href="#" class="fb"><i class="fa fa-facebook"></i></a>
+								<div class="siBot">
+									<span class="sCount" ng-bind="fbCount"></span></br>
+									<span>Fans</span>
+								</div>	
+							</li>
+							<li class="socialIcon text-center">
+								<a href="#" class="twt"><i class="fa fa-twitter"></i></a>
+								<div class="siBot">
+									<span class="sCount">12475</span></br>
+									<span>Followers</span>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div><!-- Social Connection End -->
+				
+				<div class="selectionTestDiv offsetBot40"><!-- Poll Section Start -->
+					<h1 class="heading"><span>मतचाचणी</span></h1>
+					<div class="poll">
+						<p ng-bind="pollData.question">मावळ लोकसभा मतदारसंघात शिवसेना अपयशी ठरली आहे, असे आपणांस वाटते का?</p>
+						<ul class="list-unstyled">
+							<li>
+								<label ng-bind="pollData.option_a">होय</label>
+								<button type="button" class="btn btn-sm btn-success" ng-click="submitVote(pollData.id,'cnt_a')">Vote</button>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success" style="width:{{countA}}%">{{countA}}%</div>
+								</div>
+							</li>
+							<li>
+								<label ng-bind="pollData.option_b">नाही</label>
+								<button type="button" class="btn btn-sm btn-danger" ng-click="submitVote(pollData.id,'cnt_b')">Vote</button>
+								<div class="progress">
+									<div class="progress-bar progress-bar-danger" style="width:{{countB}}%">{{countB}}%</div>
+								</div>
+							</li>
+							<li>
+								<label ng-bind="pollData.option_c">माहित नाही</label>
+								<button type="button" class="btn btn-sm btn-warning" ng-click="submitVote(pollData.id,'cnt_c')">Vote</button>
+								<div class="progress">
+									<div class="progress-bar progress-bar-warning" style="width:{{countC}}%">{{countC}}%</div>
+								</div>
+							</li>
+							<li>
+								<label ng-bind="pollData.option_d">तटस्थ</label>
+								<button type="button" class="btn btn-sm btn-info" ng-click="submitVote(pollData.id,'cnt_d')">Vote</button>
+								<div class="progress">
+									<div class="progress-bar progress-bar-info" style="width:{{countD}}%">{{countD}}%</div>
+								</div>
+							</li>
+						</ul>
+						<span class="voteCount">{{total}} votes</span>
+					</div>
+				</div><!-- Poll Section End -->
+				
+				<div class="headlineTagsDiv offsetBot40"><!-- Tag List Start -->
+					<h1 class="heading"><span>ठळक बातम्या</span></h1>
+					<div style="" id="tags">
+					</div>
+				</div><!-- Tag List Start -->
+				
+				<div class="astrologyDiv offsetBot40" style="display:none;"><!-- Astrology Section Start -->
+					<h1 class="heading"><span>दैनिक राशिभविष्य</span></h1>
+					<img src="img/rashibhavishya.jpg"><!-- Astrology Section End -->
+				</div>
+				
+				<div class="advtBox offsetBot40"><!-- Advertisement Box Start -->
+					<h1 class="heading"><span>जाहिराती</span></h1>
+					<div id="advtSlider" class="advtSlider2 owl-carousel owl-theme">
+								<div class="item" ng-repeat="images in rightbottomAds"><img ng-src="{{'uploads/'+images.adv_type+'/'+images.image}}"></div>
+								
+							</div>
+				</div><!-- Advertisement Box End -->
+				
+				<div class="socialPage offsetBot40"><!-- Social Box End -->
+					<h1 class="heading"><span>सामाजिक</span></h1>
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpcbtoday.in&tabs=timeline&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&472521466216581" width="450" height="500" style="width:100%;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                       
+                                        <div style="max-height:450px; overflow:scroll">
+                           <a class="twitter-timeline" href="https://twitter.com/pcbtodaynews">Tweets by PCBTodayNews</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                     
+                            
+
+                        </div>
+				</div><!-- Social Box End -->
+			
+		

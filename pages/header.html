@@ -1,0 +1,45 @@
+<header>
+	<div class="mainLogoSection">
+		<div class="container-fluid text-center">
+			<a href="#/home"><img src="img/logo.png" class="logo"></a>
+			<a href="#" class="navToggleBtn"><i class="fa fa-bars"></i></a>
+		</div>
+	</div>
+	<nav class="navigationMenu"><!-- Navigation Menu Start -->
+		<div class="container-fluid">
+			<ul class="navMenuList clean clearfix list-unstyled">
+				<li><a ui-sref="web.newslist({id:1})">बँनर न्यूज </a></li>
+				<li class="active"><a href="#newslist/2">पिंपरी </a></li>
+				<li><a href="#newslist/3">चिंचवड </a></li>
+				<li><a href="#newslist/4">भोसरी </a></li>
+				<li><a href="#newslist/5">पुणे </a></li>
+				<li><a href="#newslist/12">पुणे ग्रामीण </a></li>
+				<li><a href="#newslist/6">महाराष्ट्र </a></li>
+				<li><a href="#newslist/7">देश </a></li>
+				<li><a href="#newslist/8">विदेश </a></li>
+			
+				<li><a href="newslist/11">ठळक बातम्या </a></li>
+				<li class="dropdown"> 
+					<a href="#" class="dropdown-toggle" id="otherMenus" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> इतर <span class="caret"></span> </a> 
+					<ul class="dropdown-menu" aria-labelledby="otherMenus"> 
+						<li><a href="Poll">पोल</a></li> 
+						<li><a href="#newslist/1">संपर्क</a></li> 
+						<li><a href="#newslist/1">जाहिरातविषयक</a></li> 
+						<li role="separator" class="divider"></li> 
+						<li><a href="#newslist/1">अभिप्राय</a></li>
+					</ul> 
+				</li>
+			</ul>
+		</div>
+	</nav><!-- Navigation Menu End -->
+	
+	<div class="marqueeDiv relative clearfix"><!-- Breaking News Start -->
+		<span>Breaking News</span>
+		<marquee class="marqueeNews" direction=left>
+			<ul class="list-unstyled clean clearfix">
+				<li ng-repeat="news in breakingNews">{{news.text}}</li>
+				
+			</ul>
+		</marquee>
+	</div><!-- Breaking News End -->
+</header>
